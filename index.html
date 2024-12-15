@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英文單字測驗</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-container">
+            <div id="timer">剩餘時間：15秒</div>
+            <div id="progress">題目 1/10</div>
+            <div id="word-container">
+                <span id="word">Ready?</span>
+                <button id="speak-btn" class="speak-icon">🔊</button>
+            </div>
+            <div id="options-container">
+                <!-- 選項會由 JavaScript 動態生成 -->
+            </div>
+            <div id="feedback" class="hidden"></div>
+        </div>
+        <div id="results-container" class="hidden">
+            <h2>測驗結果</h2>
+            <div id="score"></div>
+            <div id="answer-list"></div>
+            <button id="restart-btn">重新開始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
